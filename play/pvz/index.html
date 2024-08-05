@@ -1,16 +1,57 @@
 
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width,initial-scale=1" />
-		<base href="." target="_blank" />
-		<title>Plants VS Zombies</title>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Plants vs. Zombies</title>
     <link rel="shortcut icon" type="image/x-icon" href="35c6d8b3f57f2dad9ba614297dccc99c.png" />
-		<link rel="stylesheet" type="text/css" href="index.css" />
-		<script type="text/javascript" src="https://unpkg.com/@ruffle-rs/ruffle "></script>
-	</head>
-	<body>
-		<script type="text/javascript" src="index.js"></script>
-	</body>
+  </head>
+  <body style="margin: 0; padding: 0">
+    <div
+      id="container"
+      style="position: absolute; width: auto; height: auto; inset: 0"
+    ></div>
+    <script src="../ruffle/ruffle.js"></script>
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("container");
+        player.style.width = "100%";
+        player.style.height = "100%";
+        container.appendChild(player);
+        player.load("plantsvszombies.swf");
+      });
+    </script>
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+    // Options affecting files only
+    "autoplay": "auto",
+    "unmuteOverlay": "visible",
+    "backgroundColor": null,
+    "wmode": "window",
+    "letterbox": "fullscreen",
+    "warnOnUnsupportedContent": false,
+    "contextMenu": "on",
+    "showSwfDownload": false,
+    "upgradeToHttps": window.location.protocol === "https:",
+    "maxExecutionDuration": 15,
+    "logLevel": "error",
+    "base": null,
+    "menu": true,
+    "salign": "",
+    "forceAlign": false,
+    "scale": "showAll",
+    "forceScale": false,
+    "frameRate": null,
+    "quality": "low",
+    "splashScreen": true,
+    "preferredRenderer": webgpu-webgl,
+    "favorFlash": true,
+};
+    </script>
+    
+  </body>
 </html>
