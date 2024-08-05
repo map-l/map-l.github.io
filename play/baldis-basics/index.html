@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Baldi's Basics in Education and Learning</title>
+    <title>Unity WebGL Player | New Unity Project</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
@@ -13,16 +13,14 @@
     </script>
   </head>
   <body>
-    <div class="webgl-content">
-   <div id="unity-container" style="position: absolute; width: 100%; height: 100%; left: 0%; top: 0%;">
-      <canvas id="unity-canvas" style="position: absolute; width: 100%; height: 100%"></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
-        </div>
-      </div>
-      <div id="unity-warning"> </div>
+    <div class="webgl-content" style="display: table; width: 100%; height: 100%;">
+      <div id="unityContainer"></div>
     </div>
+    <script>
+    var mywidth = innerWidth;
+    var myheight = innerHeight;
+        document.getElementById("unityContainer").style.width = mywidth + "px";
+        document.getElementById("unityContainer").style.height = myheight + "px";
+    </script>
   </body>
 </html>
