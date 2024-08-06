@@ -26,14 +26,14 @@
                 unmuteOverlay: "hidden",
             };
             document.addEventListener("DOMContentLoaded", function () {
-                let swf = 'https://map-l.github.io/play/btd5/btd5.swf';
+                let swf = 'https://map-l.github.io/play/btd5/bloonstd5.swf';
                 if (swf) {
                     let ruffle = window.RufflePlayer.newest();
                     let player = Object.assign(document.getElementById("container").appendChild(ruffle.createPlayer()), {
                         style: 'width: 100vw; height: 100vh',
                     });
                                       player.load({
-                        url: 'https://map-l.github.io/play/scarymaze/scary-maze-game.swf'
+                        url: 'https://map-l.github.io/play/btd5/bloonstd5.swf'
                     });  
 
                 }
