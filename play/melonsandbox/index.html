@@ -1,0 +1,596 @@
+
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head><meta http-equiv="Content-Security-Policy" content="child-src 'self' *.allwebgames.com *.api.gameanalytics.com *.cdp.cloud.unity3d.com *.cloud-api.yandex.net *.firebase.googleapis.com *.firebasestorage.googleapis.com *.firestore.googleapis.com *.games-sdk.yandex.ru *.gametok.com *.gstatic.com *.hippogames.dev *.juegocasa.com *.oauth2.googleapis.com *.openidconnect.googleapis.com *.playhop.com *.playmelonpg.com *.s3.eu-central-1.amazonaws.com *.storage.yandex.net *.wowspiele.de *.yandex.az *.yandex.by *.yandex.co.il *.yandex.com *.yandex.com.am *.yandex.com.ge *.yandex.com.tr *.yandex.ee *.yandex.fr *.yandex.kg *.yandex.kz *.yandex.lt *.yandex.lv *.yandex.md *.yandex.ru *.yandex.tj *.yandex.tm *.yandex.ua *.yandex.uz allwebgames.com api.gameanalytics.com blob: cdp.cloud.unity3d.com cloud-api.yandex.net firebase.googleapis.com firebasestorage.googleapis.com firestore.googleapis.com games-sdk.yandex.ru gametok.com gstatic.com hippogames.dev juegocasa.com oauth2.googleapis.com openidconnect.googleapis.com playhop.com playmelonpg.com s3.eu-central-1.amazonaws.com storage.yandex.net wowspiele.de yandex.az yandex.by yandex.co.il yandex.com yandex.com.am yandex.com.ge yandex.com.tr yandex.ee yandex.fr yandex.kg yandex.kz yandex.lt yandex.lv yandex.md yandex.ru yandex.tj yandex.tm yandex.ua yandex.uz; connect-src 'self' *.allwebgames.com *.api.gameanalytics.com *.cdp.cloud.unity3d.com *.cloud-api.yandex.net *.eponesh.com *.firebase.googleapis.com *.firebasestorage.googleapis.com *.firestore.googleapis.com *.gameanalytics.com *.games-sdk.yandex.ru *.gametok.com *.gstatic.com *.hippogames.dev *.juegocasa.com *.oauth2.googleapis.com *.openidconnect.googleapis.com *.playhop.com *.playmelonpg.com *.s3.eu-central-1.amazonaws.com *.storage.yandex.net *.unity3d.com *.website.yandexcloud.net *.wowspiele.de *.yandex.az *.yandex.by *.yandex.co.il *.yandex.com *.yandex.com.am *.yandex.com.ge *.yandex.com.tr *.yandex.ee *.yandex.fr *.yandex.kg *.yandex.kz *.yandex.lt *.yandex.lv *.yandex.md *.yandex.net *.yandex.ru *.yandex.tj *.yandex.tm *.yandex.ua *.yandex.uz allwebgames.com api.gameanalytics.com blob: cdp.cloud.unity3d.com cloud-api.yandex.net data: firebase.googleapis.com firebasestorage.googleapis.com firestore.googleapis.com games-sdk.yandex.ru gametok.com gstatic.com hippogames.dev juegocasa.com oauth2.googleapis.com openidconnect.googleapis.com playhop.com playmelonpg.com s3.eu-central-1.amazonaws.com storage.yandex.net storage.yandexcloud.net wowspiele.de wss://*.api.gameanalytics.com:* wss://*.cdp.cloud.unity3d.com:* wss://*.cloud-api.yandex.net:* wss://*.eponesh.com:* wss://*.firebase.googleapis.com:* wss://*.firebasestorage.googleapis.com:* wss://*.firestore.googleapis.com:* wss://*.games-sdk.yandex.ru:* wss://*.gstatic.com:* wss://*.hippogames.dev:* wss://*.oauth2.googleapis.com:* wss://*.openidconnect.googleapis.com:* wss://*.playmelonpg.com:* wss://*.s3.eu-central-1.amazonaws.com:* wss://*.storage.yandex.net:* wss://api.gameanalytics.com:* wss://cdp.cloud.unity3d.com:* wss://cloud-api.yandex.net:* wss://firebase.googleapis.com:* wss://firebasestorage.googleapis.com:* wss://firestore.googleapis.com:* wss://games-sdk.yandex.ru:* wss://gstatic.com:* wss://hippogames.dev:* wss://oauth2.googleapis.com:* wss://openidconnect.googleapis.com:* wss://playmelonpg.com:* wss://s3.eu-central-1.amazonaws.com:* wss://storage.yandex.net:* www.google-analytics.com www.googletagmanager.com yandex.az yandex.by yandex.co.il yandex.com yandex.com.am yandex.com.ge yandex.com.tr yandex.ee yandex.fr yandex.kg yandex.kz yandex.lt yandex.lv yandex.md yandex.ru yandex.tj yandex.tm yandex.ua yandex.uz yandexmetrica.com yastatic.net; default-src 'self' *.api.gameanalytics.com *.cdp.cloud.unity3d.com *.cloud-api.yandex.net *.firebase.googleapis.com *.firebasestorage.googleapis.com *.firestore.googleapis.com *.games-sdk.yandex.ru *.gstatic.com *.hippogames.dev *.oauth2.googleapis.com *.openidconnect.googleapis.com *.playmelonpg.com *.s3.eu-central-1.amazonaws.com *.storage.yandex.net api.gameanalytics.com cdp.cloud.unity3d.com cloud-api.yandex.net firebase.googleapis.com firebasestorage.googleapis.com firestore.googleapis.com games-sdk.yandex.ru gstatic.com hippogames.dev oauth2.googleapis.com openidconnect.googleapis.com playmelonpg.com s3.eu-central-1.amazonaws.com storage.yandex.net; font-src 'self' *.allwebgames.com *.api.gameanalytics.com *.cdp.cloud.unity3d.com *.cloud-api.yandex.net *.firebase.googleapis.com *.firebasestorage.googleapis.com *.firestore.googleapis.com *.games-sdk.yandex.ru *.gametok.com *.gstatic.com *.hippogames.dev *.juegocasa.com *.oauth2.googleapis.com *.openidconnect.googleapis.com *.playhop.com *.playmelonpg.com *.s3.eu-central-1.amazonaws.com *.storage.yandex.net *.website.yandexcloud.net *.wowspiele.de *.yandex.az *.yandex.by *.yandex.co.il *.yandex.com *.yandex.com.am *.yandex.com.ge *.yandex.com.tr *.yandex.ee *.yandex.fr *.yandex.kg *.yandex.kz *.yandex.lt *.yandex.lv *.yandex.md *.yandex.ru *.yandex.tj *.yandex.tm *.yandex.ua *.yandex.uz allwebgames.com api.gameanalytics.com cdp.cloud.unity3d.com cloud-api.yandex.net data: firebase.googleapis.com firebasestorage.googleapis.com firestore.googleapis.com fonts.gstatic.com games-sdk.yandex.ru gametok.com gstatic.com hippogames.dev juegocasa.com oauth2.googleapis.com openidconnect.googleapis.com playhop.com playmelonpg.com s3.eu-central-1.amazonaws.com storage.yandex.net storage.yandexcloud.net wowspiele.de yandex.az yandex.by yandex.co.il yandex.com yandex.com.am yandex.com.ge yandex.com.tr yandex.ee yandex.fr yandex.kg yandex.kz yandex.lt yandex.lv yandex.md yandex.ru yandex.tj yandex.tm yandex.ua yandex.uz yastat.net yastatic.net; frame-src 'self' *.allwebgames.com *.api.gameanalytics.com *.cdp.cloud.unity3d.com *.cloud-api.yandex.net *.firebase.googleapis.com *.firebasestorage.googleapis.com *.firestore.googleapis.com *.games-sdk.yandex.ru *.gametok.com *.gstatic.com *.hippogames.dev *.juegocasa.com *.oauth2.googleapis.com *.openidconnect.googleapis.com *.playhop.com *.playmelonpg.com *.s3.eu-central-1.amazonaws.com *.storage.yandex.net *.website.yandexcloud.net *.wowspiele.de *.yandex.az *.yandex.by *.yandex.co.il *.yandex.com *.yandex.com.am *.yandex.com.ge *.yandex.com.tr *.yandex.ee *.yandex.fr *.yandex.kg *.yandex.kz *.yandex.lt *.yandex.lv *.yandex.md *.yandex.ru *.yandex.tj *.yandex.tm *.yandex.ua *.yandex.uz allwebgames.com api.gameanalytics.com cdp.cloud.unity3d.com cloud-api.yandex.net firebase.googleapis.com firebasestorage.googleapis.com firestore.googleapis.com games-sdk.yandex.ru gametok.com gstatic.com hippogames.dev juegocasa.com localhost oauth2.googleapis.com openidconnect.googleapis.com playhop.com playmelonpg.com s3.eu-central-1.amazonaws.com storage.yandex.net wowspiele.de yandex.az yandex.by yandex.co.il yandex.com yandex.com.am yandex.com.ge yandex.com.tr yandex.ee yandex.fr yandex.kg yandex.kz yandex.lt yandex.lv yandex.md yandex.ru yandex.tj yandex.tm yandex.ua yandex.uz yastatic.net; img-src 'self' *.allwebgames.com *.api.gameanalytics.com *.cdp.cloud.unity3d.com *.cloud-api.yandex.net *.eponesh.com *.firebase.googleapis.com *.firebasestorage.googleapis.com *.firestore.googleapis.com *.games-sdk.yandex.ru *.gametok.com *.gstatic.com *.hippogames.dev *.juegocasa.com *.oauth2.googleapis.com *.openidconnect.googleapis.com *.playhop.com *.playmelonpg.com *.s3.eu-central-1.amazonaws.com *.storage.yandex.net *.website.yandexcloud.net *.wowspiele.de *.yandex.az *.yandex.by *.yandex.co.il *.yandex.com *.yandex.com.am *.yandex.com.ge *.yandex.com.tr *.yandex.ee *.yandex.fr *.yandex.kg *.yandex.kz *.yandex.lt *.yandex.lv *.yandex.md *.yandex.net *.yandex.ru *.yandex.tj *.yandex.tm *.yandex.ua *.yandex.uz allwebgames.com api.gameanalytics.com blob: cdp.cloud.unity3d.com cloud-api.yandex.net data: firebase.googleapis.com firebasestorage.googleapis.com firestore.googleapis.com games-sdk.yandex.ru gametok.com gstatic.com hippogames.dev juegocasa.com oauth2.googleapis.com openidconnect.googleapis.com playhop.com playmelonpg.com s3.eu-central-1.amazonaws.com storage.yandex.net storage.yandexcloud.net wowspiele.de yandex.az yandex.by yandex.co.il yandex.com yandex.com.am yandex.com.ge yandex.com.tr yandex.ee yandex.fr yandex.kg yandex.kz yandex.lt yandex.lv yandex.md yandex.ru yandex.tj yandex.tm yandex.ua yandex.uz yastatic.net; media-src 'self' *.allwebgames.com *.api.gameanalytics.com *.cdp.cloud.unity3d.com *.cloud-api.yandex.net *.firebase.googleapis.com *.firebasestorage.googleapis.com *.firestore.googleapis.com *.games-sdk.yandex.ru *.gametok.com *.gstatic.com *.hippogames.dev *.juegocasa.com *.oauth2.googleapis.com *.openidconnect.googleapis.com *.playhop.com *.playmelonpg.com *.s3.eu-central-1.amazonaws.com *.storage.yandex.net *.website.yandexcloud.net *.wowspiele.de *.yandex.az *.yandex.by *.yandex.co.il *.yandex.com *.yandex.com.am *.yandex.com.ge *.yandex.com.tr *.yandex.ee *.yandex.fr *.yandex.kg *.yandex.kz *.yandex.lt *.yandex.lv *.yandex.md *.yandex.net *.yandex.ru *.yandex.tj *.yandex.tm *.yandex.ua *.yandex.uz allwebgames.com api.gameanalytics.com blob: cdp.cloud.unity3d.com cloud-api.yandex.net data: firebase.googleapis.com firebasestorage.googleapis.com firestore.googleapis.com games-sdk.yandex.ru gametok.com gstatic.com hippogames.dev juegocasa.com oauth2.googleapis.com openidconnect.googleapis.com playhop.com playmelonpg.com s3.eu-central-1.amazonaws.com storage.yandex.net storage.yandexcloud.net wowspiele.de yandex.az yandex.by yandex.co.il yandex.com yandex.com.am yandex.com.ge yandex.com.tr yandex.ee yandex.fr yandex.kg yandex.kz yandex.lt yandex.lv yandex.md yandex.ru yandex.tj yandex.tm yandex.ua yandex.uz; object-src 'self' *.allwebgames.com *.api.gameanalytics.com *.cdp.cloud.unity3d.com *.cloud-api.yandex.net *.firebase.googleapis.com *.firebasestorage.googleapis.com *.firestore.googleapis.com *.games-sdk.yandex.ru *.gametok.com *.gstatic.com *.hippogames.dev *.juegocasa.com *.oauth2.googleapis.com *.openidconnect.googleapis.com *.playhop.com *.playmelonpg.com *.s3.eu-central-1.amazonaws.com *.storage.yandex.net *.wowspiele.de *.yandex.az *.yandex.by *.yandex.co.il *.yandex.com *.yandex.com.am *.yandex.com.ge *.yandex.com.tr *.yandex.ee *.yandex.fr *.yandex.kg *.yandex.kz *.yandex.lt *.yandex.lv *.yandex.md *.yandex.ru *.yandex.tj *.yandex.tm *.yandex.ua *.yandex.uz allwebgames.com api.gameanalytics.com blob: cdp.cloud.unity3d.com cloud-api.yandex.net firebase.googleapis.com firebasestorage.googleapis.com firestore.googleapis.com games-sdk.yandex.ru gametok.com gstatic.com hippogames.dev juegocasa.com oauth2.googleapis.com openidconnect.googleapis.com playhop.com playmelonpg.com s3.eu-central-1.amazonaws.com storage.yandex.net wowspiele.de yandex.az yandex.by yandex.co.il yandex.com yandex.com.am yandex.com.ge yandex.com.tr yandex.ee yandex.fr yandex.kg yandex.kz yandex.lt yandex.lv yandex.md yandex.ru yandex.tj yandex.tm yandex.ua yandex.uz; script-src 'self' 'unsafe-eval' 'unsafe-inline' *.allwebgames.com *.api.gameanalytics.com *.cdp.cloud.unity3d.com *.cloud-api.yandex.net *.eponesh.com *.firebase.googleapis.com *.firebasestorage.googleapis.com *.firestore.googleapis.com *.gameanalytics.com *.games-sdk.yandex.ru *.gametok.com *.gstatic.com *.hippogames.dev *.juegocasa.com *.oauth2.googleapis.com *.openidconnect.googleapis.com *.playhop.com *.playmelonpg.com *.s3.eu-central-1.amazonaws.com *.storage.yandex.net *.website.yandexcloud.net *.wowspiele.de *.ya.ru *.yandex.az *.yandex.by *.yandex.co.il *.yandex.com *.yandex.com.am *.yandex.com.ge *.yandex.com.tr *.yandex.ee *.yandex.fr *.yandex.kg *.yandex.kz *.yandex.lt *.yandex.lv *.yandex.md *.yandex.ru *.yandex.tj *.yandex.tm *.yandex.ua *.yandex.uz abt.s3.yandex.net allwebgames.com api.gameanalytics.com blob: cdp.cloud.unity3d.com cloud-api.yandex.net data: firebase.googleapis.com firebasestorage.googleapis.com firestore.googleapis.com games-sdk.yandex.ru gametok.com gstatic.com hippogames.dev juegocasa.com oauth2.googleapis.com openidconnect.googleapis.com playhop.com playmelonpg.com s3.eu-central-1.amazonaws.com storage.yandex.net storage.yandexcloud.net wowspiele.de www.google-analytics.com www.googletagmanager.com ya.ru yandex.az yandex.by yandex.co.il yandex.com yandex.com.am yandex.com.ge yandex.com.tr yandex.ee yandex.fr yandex.kg yandex.kz yandex.lt yandex.lv yandex.md yandex.ru yandex.tj yandex.tm yandex.ua yandex.uz yastatic.net; style-src 'self' 'unsafe-eval' 'unsafe-inline' *.allwebgames.com *.api.gameanalytics.com *.cdp.cloud.unity3d.com *.cloud-api.yandex.net *.firebase.googleapis.com *.firebasestorage.googleapis.com *.firestore.googleapis.com *.games-sdk.yandex.ru *.gametok.com *.gstatic.com *.hippogames.dev *.juegocasa.com *.oauth2.googleapis.com *.openidconnect.googleapis.com *.playhop.com *.playmelonpg.com *.s3.eu-central-1.amazonaws.com *.storage.yandex.net *.website.yandexcloud.net *.wowspiele.de *.yandex.az *.yandex.by *.yandex.co.il *.yandex.com *.yandex.com.am *.yandex.com.ge *.yandex.com.tr *.yandex.ee *.yandex.fr *.yandex.kg *.yandex.kz *.yandex.lt *.yandex.lv *.yandex.md *.yandex.ru *.yandex.tj *.yandex.tm *.yandex.ua *.yandex.uz allwebgames.com api.gameanalytics.com blob: cdp.cloud.unity3d.com cloud-api.yandex.net data: firebase.googleapis.com firebasestorage.googleapis.com firestore.googleapis.com fonts.googleapis.com games-sdk.yandex.ru gametok.com gstatic.com hippogames.dev juegocasa.com oauth2.googleapis.com openidconnect.googleapis.com playhop.com playmelonpg.com s3.eu-central-1.amazonaws.com storage.yandex.net storage.yandexcloud.net wowspiele.de yandex.az yandex.by yandex.co.il yandex.com yandex.com.am yandex.com.ge yandex.com.tr yandex.ee yandex.fr yandex.kg yandex.kz yandex.lt yandex.lv yandex.md yandex.ru yandex.tj yandex.tm yandex.ua yandex.uz; worker-src 'self' *.allwebgames.com *.gametok.com *.juegocasa.com *.playhop.com *.website.yandexcloud.net *.wowspiele.de *.yandex.az *.yandex.by *.yandex.co.il *.yandex.com *.yandex.com.am *.yandex.com.ge *.yandex.com.tr *.yandex.ee *.yandex.fr *.yandex.kg *.yandex.kz *.yandex.lt *.yandex.lv *.yandex.md *.yandex.ru *.yandex.tj *.yandex.tm *.yandex.ua *.yandex.uz allwebgames.com blob: gametok.com juegocasa.com playhop.com storage.yandexcloud.net wowspiele.de yandex.az yandex.by yandex.co.il yandex.com yandex.com.am yandex.com.ge yandex.com.tr yandex.ee yandex.fr yandex.kg yandex.kz yandex.lt yandex.lv yandex.md yandex.ru yandex.tj yandex.tm yandex.ua yandex.uz"/>
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="shortcut icon" href="TemplateData/favicon.ico"/>
+<link rel="stylesheet" href="TemplateData/style.css"/>
+<!-- Yandex Games SDK -->
+<script src="/sdk.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments);
+            };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) {
+                    return;
+                }
+            }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a);
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(95560255, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true
+        });
+    </script>
+<noscript>
+<div>
+<img src="https://mc.yandex.ru/watch/95560255" style="position:absolute; left:-9999px;" alt=""/>
+</div>
+</noscript>
+<!-- Yandex.Metrika counter -->
+</head>
+<body>
+<div id="unity-container" style="height: 100%;">
+<canvas id="unity-canvas" width="1900" height="900" style="width: 100%; height: 100%"></canvas>
+<div id="unity-loading-bar">
+<div id="unity-progress-bar-empty">
+<div id="unity-progress-bar-full"></div>
+</div>
+</div>
+<div id="unity-warning"></div>
+</div>
+<script>
+        YaGames
+            .init()
+            .then(ysdk => {
+                console.log('Yandex SDK initialized');
+                window.ysdk = ysdk;
+				
+				ysdk.adv.showFullscreenAdv({
+					callbacks: {
+						onClose: function (wasShown) { console.log('showFullscreenAdv finished'); },
+						onError: function (error) { console.log('showFullscreenAdv error'); }
+					}
+				});
+            });
+
+        var player;
+
+        function InitLanguage() {
+            return ysdk.getPlayer().then(_player => {
+
+                var environment = ysdk.environment;
+                gameInstance.SendMessage('LocalizationManager', 'InitiallzieYandexLanguage', JSON.stringify(environment));
+            });
+        }
+
+        function initPlayer() {
+            return ysdk.getPlayer().then(_player => {
+                player = _player;
+
+                return player;
+            });
+        }
+        
+        window.SignOut = function() {
+            player = null;
+
+            gameInstance.SendMessage('CloudStorageManager', 'SighOut');
+
+            console.log('Player is sign out');
+        }
+
+        window.SavePlayerData = function(data) {
+            var dateString = UTF8ToString(data);
+            var myObj = JSON.parse(dateString);
+            player.setData(myObj);
+
+            console.log('Player is sign out');
+        }
+
+        window.AuthYandexGame = function() {
+            initPlayer().then(_player => {
+                if (_player.getMode() === 'lite') {
+                    console.log('Player is not authorized ');
+                }
+                else
+                {
+                    player = _player;
+
+                    var playerID = player.getUniqueID();
+                    var playerName = player.getName();
+
+                    console.log(playerName);
+                    gameInstance.SendMessage('CloudStorageManager', 'SetPlayerName', playerName);
+
+                    player.getData().then(_data => {
+                    const myJSON = JSON.stringify(_data);
+                    gameInstance.SendMessage('CloudStorageManager', 'SetYandexGameData', myJSON);
+
+                    console.log("AuthYandexGame");
+                    });
+                }
+            }).catch(err => {
+                // Ошибка при инициализации объекта Player.
+            });
+        }
+
+        window.CheckAuth = function() {
+            initPlayer().then(_player => {
+                if (_player.getMode() === 'lite') {
+                    console.log('Player is not authorized ');
+                }
+                else
+                {
+                    player = _player;
+
+                        var playerID = player.getUniqueID();
+                        var playerName = player.getName();
+
+                        console.log(playerName);
+                        gameInstance.SendMessage('CloudStorageManager', 'SetPlayerName', playerName);
+                        gameInstance.SendMessage('CloudStorageManager', 'SetYandexData', playerID);
+                }
+            }).catch(err => {
+                // Ошибка при инициализации объекта Player.
+            });
+        }
+
+        window.auth = function() {
+            initPlayer().then(_player => {
+                if (_player.getMode() === 'lite') {
+                    // Игрок не авторизован.
+                    ysdk.auth.openAuthDialog().then(() => {
+
+                        // Игрок успешно авторизован
+                        var playerID = player.getUniqueID();
+                        var playerName = player.getName();
+                        gameInstance.SendMessage('CloudStorageManager', 'SetPlayerName', playerName);
+                        gameInstance.SendMessage('CloudStorageManager', 'SetYandexData', playerID);
+
+                        initPlayer().catch(err => {
+                            // Ошибка при инициализации объекта Player.
+                        });
+                    }).catch(() => {
+                        // Игрок не авторизован.
+                    });
+                }
+                else
+                {
+                        var playerID = player.getUniqueID();
+                        var playerName = player.getName();
+                        gameInstance.SendMessage('CloudStorageManager', 'SetPlayerName', playerName);
+                        gameInstance.SendMessage('CloudStorageManager', 'SetYandexData', playerID);
+                }
+            }).catch(err => {
+                // Ошибка при инициализации объекта Player.
+            });
+        }
+    </script>
+<script>
+        var container = document.querySelector("#unity-container");
+        var canvas = document.querySelector("#unity-canvas");
+        var loadingBar = document.querySelector("#unity-loading-bar");
+        var progressBarFull = document.querySelector("#unity-progress-bar-full");
+        var warningBanner = document.querySelector("#unity-warning");
+
+        var gameInstance = null;
+
+        // Shows a temporary message banner/ribbon for a few seconds, or
+        // a permanent error message on top of the canvas if type=='error'.
+        // If type=='warning', a yellow highlight color is used.
+        // Modify or remove this function to customize the visually presented
+        // way that non-critical warnings and error messages are presented to the
+        // user.
+        function unityShowBanner(msg, type) {
+            function updateBannerVisibility() {
+                warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+            }
+            var div = document.createElement('div');
+            div.innerHTML = msg;
+            warningBanner.appendChild(div);
+            if (type == 'error') div.style = 'background: red; padding: 10px;';
+            else {
+                if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+                setTimeout(function () {
+                    warningBanner.removeChild(div);
+                    updateBannerVisibility();
+                }, 5000);
+            }
+            updateBannerVisibility();
+        }
+
+        var buildUrl = "Build";
+        var loaderUrl = buildUrl + "/Build.loader.js";
+        var config = {
+            dataUrl: buildUrl + "/Build.data.unityweb",
+            frameworkUrl: buildUrl + "/Build.framework.js.unityweb",
+            codeUrl: buildUrl + "/Build.wasm.unityweb",
+            streamingAssetsUrl: "StreamingAssets",
+            companyName: "27 Studio",
+            productName: "MelonPlayground",
+            productVersion: "17.0f23",
+            showBanner: unityShowBanner,
+        };
+
+        // By default Unity keeps WebGL canvas render target size matched with
+        // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+        // Set this to false if you want to decouple this synchronization from
+        // happening inside the engine, and you would instead like to size up
+        // the canvas DOM size and WebGL render target sizes yourself.
+        // config.matchWebGLToCanvasSize = false;
+
+        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+            // Mobile device style: fill the whole browser client area with the game canvas:
+
+            var meta = document.createElement('meta');
+            meta.name = 'viewport';
+            meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+            document.getElementsByTagName('head')[0].appendChild(meta);
+            container.className = "unity-mobile";
+            canvas.className = "unity-mobile";
+
+            // To lower canvas resolution on mobile devices to gain some
+            // performance, uncomment the following line:
+            config.devicePixelRatio = 1.2;
+
+            //unityShowBanner('WebGL builds are not supported on mobile devices.');
+        }
+
+        loadingBar.style.display = "block";
+
+        var script = document.createElement("script");
+        script.src = loaderUrl;
+        script.onload = () => {
+            createUnityInstance(canvas, config, (progress) => {
+                progressBarFull.style.width = 100 * progress + "%";
+            }).then((unityInstance) => {
+                window.unityInstance = unityInstance;
+                gameInstance = unityInstance;
+                loadingBar.style.display = "none";
+            }).catch((message) => {
+                alert(message);
+            });
+        };
+
+        document.body.appendChild(script);
+    </script>
+<script type="module">
+        import { } from "https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js";
+        import { } from "https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js";
+        import { } from "https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js";
+        const firebaseConfig = {
+            apiKey: "AIzaSyBUbmTbCeLaZntAfg1AvR9edtKSHkKEPUE",
+            authDomain: "melonpg-87aeb.firebaseapp.com",
+            databaseURL: "https://melonpg-87aeb-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "melonpg-87aeb",
+            storageBucket: "melonpg-87aeb.appspot.com",
+            messagingSenderId: "148385687918",
+            appId: "1:148385687918:web:cf3ff648f8e50fb24db97f",
+            measurementId: "G-LM2F48R7E2"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+<!-- BEGIN WEBGL FILE BROWSER LIB -->
+<style>
+        #fb_popup_background.highlight {
+            border: 3px dashed #ccc;
+            border-radius: 26px;
+            border-color: aquamarine;
+        }
+        .disableSelection {
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+    </style>
+<div id="fileBrowserPopup" style="display: none; margin: 0%; position: absolute; width: 100%; height: 100%; left: 0; top: 0; bottom: 0; right: 0;">
+<img class="disableSelection" style="position: absolute; width: 100%; height: 100%; background-color: #000000; filter: opacity(0.7) blur(4px); "/>
+<div id="fb_popup">
+<img id="fb_popup_background" src="FileBrowser/popup_background.png" style="position: fixed; top: 0;  right: 0; bottom: 0; left: 0; margin: auto; width: 502.5px; height: 206px;"/>
+<div>
+<img src="FileBrowser/popup_header.png" style="position: fixed; top: -146px;  right: 0; bottom: 0; left: 0; margin: auto; width: 502.5px; height: 60.5px;"/>
+<strong id="fb_popup_header_title" style="position: fixed; top: -110px;  right: -20px; bottom: 0; left: 0; margin: auto; width: 500px; height: 58px; color: white;">
+                    File Browser
+                </strong>
+</div>
+<div id="open_file_form">
+<strong id="fb_popup_description_title" style="position: fixed; top: 0px;  right: 0px; bottom: 0; left: 0; margin: auto; width: 500px; height: 58px; text-align: center; color: black;">
+                    Select file to load or use drag & drop
+                </strong>
+<label for="fileToUpload">
+<img src="FileBrowser/select_button.png" style="position: fixed; top: 0px;  right: 250px; bottom: -80px; left: 0; margin: auto; width: 193.5px; height: 41px;"/>
+<strong id="fb_popup_select_button_title" style="position: fixed; top: 0px;  right: 250px; bottom: -100px; left: 0; margin: auto; width: 193.5px; height: 41px; text-align: center; color: white;">
+                        Select
+                    </strong>
+</label>
+<input type="file" name="fileToUpload" id="fileToUpload" style="width: 0px; height: 0px;" onchange="fbLoadFiles(event.target.files);return false;"/>
+<label for="closePopup">
+<img src="FileBrowser/close_button.png" style="position: fixed; top: 0px;  right: -250px; bottom: -80px; left: 0; margin: auto; width: 193.5px; height: 41px;"/>
+<strong id="fb_popup_close_button_title" style="position: fixed; top: 0px;  right: -245px; bottom: -100px; left: 0; margin: auto; width: 193.5px; height: 41px; text-align: center; color: white;">
+                        Close
+                    </strong>
+</label>
+<input type="button" name="closePopup" id="closePopup" style="width: 0px; height: 0px;" onclick="requestCloseFileBrowserForOpen()"/>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+        // ************************ Drag and drop ***************** //
+        let dropArea = document.getElementById("fb_popup");
+        let dropAreaBG = document.getElementById("fb_popup_background");
+
+        // Prevent default drag behaviors
+        ;['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            dropArea.addEventListener(eventName, preventDefaults, false);
+            document.body.addEventListener(eventName, preventDefaults, false);
+        })
+
+        // Highlight drop area when item is dragged over it
+        ;['dragenter', 'dragover'].forEach(eventName => {
+            dropArea.addEventListener(eventName, highlight, false);
+        })
+
+        ;['dragleave', 'drop'].forEach(eventName => {
+            dropArea.addEventListener(eventName, unhighlight, false);
+        })
+
+        // Handle dropped files
+        dropArea.addEventListener('drop', handleDrop, false);
+
+        function preventDefaults (e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+
+        function highlight(e) {
+            dropAreaBG.classList.add('highlight');
+        }
+
+        function unhighlight(e) {
+            dropAreaBG.classList.remove('highlight');
+        }
+
+        function handleDrop(e) {
+            var dt = e.dataTransfer;
+            var items = dt.items;
+
+            getFilesDataTransferItems(items).then(files => {
+                fbLoadFiles(files);
+            });
+        }
+
+        function getFilesDataTransferItems(dataTransferItems) {
+            function traverseFileTreePromise(item, path = "", files) {
+                return new Promise(resolve => {
+                    if (item.isFile) {
+                        item.file(file => {
+                            files.push(file);
+                            resolve(file);
+                        });
+                    } else if (item.isDirectory) {
+                        let dirReader = item.createReader();
+                        dirReader.readEntries(entries => {
+                            let entriesPromises = [];
+                            for (let entr of entries)
+                                entriesPromises.push(
+                                    traverseFileTreePromise(entr, (path || "") + item.name + "/", files)
+                                );
+                            resolve(Promise.all(entriesPromises));
+                        });
+                    }
+                });
+            }
+
+            let files = [];
+            return new Promise((resolve, reject) => {
+                let entriesPromises = [];
+                for (let it of dataTransferItems)
+                    entriesPromises.push(
+                        traverseFileTreePromise(it.webkitGetAsEntry(), null, files)
+                    );
+                Promise.all(entriesPromises).then(entries => {
+                    resolve(files);
+                });
+            });
+        }
+    </script>
+<script type="text/javascript">
+        function callFBFunctionByName(functionName, parameter){
+            switch(functionName){
+                case "initializeFBLibrary":
+                    initializeFBLibrary();
+                    break;
+                case "openFileBrowserForLoad":
+                    openFileBrowserForLoad(parameter);
+                    break;
+                case "cleanupFB":
+                    cleanupFB();
+                    break;       
+                case "closeFileBrowserForOpen":
+                    closeFileBrowserForOpen();
+                    break;
+                case "saveFile":
+                    saveFileFB(parameter);
+                    break;
+                case "setLocalization":
+                    setLocalizationFB(parameter);
+                    break;
+            }
+        }
+        document.callFBFunctionByName = callFBFunctionByName;
+
+        function initializeFBLibrary(){
+            document.fbPopup = document.getElementById("fileBrowserPopup");
+            document.fbOpenFilePopupInput = document.getElementById("fileToUpload");
+
+            document.fbStorage = { 
+                initialized: true,
+                loadedFiles: {},
+                dataPointers: []
+            };
+        }
+
+        function openFileBrowserForLoad(parameters){
+            if(document.fbStorage.initialized !== true)
+                return;
+
+            var typesFilter = parameters[0];
+            var isMultipleSelection = parameters[1] === 1 ? true : false;
+            var isFolder = parameters[2] === 1 ? true : false;
+
+            if(document.fbOpenFilePopupInput.hasAttribute('multiple'))
+                document.fbOpenFilePopupInput.removeAttribute('multiple');
+
+            if (document.fbOpenFilePopupInput.hasAttribute('webkitdirectory'))
+                document.fbOpenFilePopupInput.removeAttribute('webkitdirectory');
+
+            if(isMultipleSelection && !isFolder)
+                document.fbOpenFilePopupInput.setAttribute('multiple', '');
+
+            if(isFolder)
+                document.fbOpenFilePopupInput.setAttribute('webkitdirectory', '');
+
+            document.fbOpenFilePopupInput.accept = typesFilter;
+		    document.fbPopup.style.display = "flex";
+        }
+
+        function closeFileBrowserForOpen(){
+            if(document.fbStorage.initialized !== true)
+                return;
+            document.fbPopup.style.display = "none";
+        }
+
+        function cleanupFB() {
+            if(document.fbStorage.initialized !== true)
+                return;
+            document.fbStorage.loadedFiles = {};
+            document.fbStorage.dataPointers = [];
+        }
+
+        function saveFileFB(fileData){
+            if(document.fbStorage.initialized !== true)
+                return;
+
+            let fileInfo = {
+                status: true,
+                message: "",
+                name: fileData.name
+            };
+
+            try{
+                var contentType = 'application/octet-stream';
+                var a = document.createElement('a');
+                var blob = new Blob([fbBase64ToBytesArray(fileData.data)], {
+                    'type': contentType
+                });
+                a.href = window.URL.createObjectURL(blob);
+                a.download = fileData.name;
+
+                if (document.createEvent) {
+                    var event = document.createEvent('MouseEvents');
+                    event.initEvent('click', true, true);
+                    a.dispatchEvent(event);
+                } else {
+                    a.click();
+                }
+
+                gameInstance.SendMessage(libraryHandlerObjectName, "HandleFileSaved", JSON.stringify(fileInfo));
+            }
+            catch(ex){
+                fileInfo.status = false;
+                fileInfo.message = ex.message;
+
+                gameInstance.SendMessage(libraryHandlerObjectName, "HandleFileSaved", JSON.stringify(fileInfo));
+            }
+        }
+
+        const libraryHandlerObjectName = "[FGFileBrowser]";
+
+        function fbLoadFiles(files) {
+            gameInstance.SendMessage(libraryHandlerObjectName, 'SetAmountOfFilesToBeLoaded', Array.from(files).filter(item => !item.name.endsWith(".DS_Store")).length);
+
+            for (var i = 0, f; f = files[i]; i++) {
+                // ignore Mac hidden file
+                if (f.name.endsWith(".DS_Store"))
+                    continue;
+
+                var reader = new FileReader();
+                reader.onload = (function (file) {
+                    return function (fileloadEvent) {
+                        let loadedFileInfo = fileloadEvent.target.result;
+                
+                        document.fbStorage.loadedFiles[file.name] = {
+                            info: loadedFileInfo
+                        };
+
+                        let extensionSplit = file.name.split('.');
+                        let extension = extensionSplit[extensionSplit.length - 1];
+                        let name = file.name.replace(extension, "");
+                        name = name.substring(0, name.length - 1);
+
+                        let loadedFile = {
+                            fullName: file.name,
+                            name: name,
+                            path: "unavailable-in-web",
+                            length: loadedFileInfo.byteLength,
+                            size: file.size,
+                            extension: extension
+                        };
+
+                        gameInstance.SendMessage(libraryHandlerObjectName, 'HandleLoadedFile', JSON.stringify(loadedFile));
+                    }
+                })(f);
+                
+                reader.readAsArrayBuffer(f);
+            }
+			document.fbOpenFilePopupInput.value = "";
+        }
+
+        function requestCloseFileBrowserForOpen() {
+            gameInstance.SendMessage(libraryHandlerObjectName, "CloseFileBrowserForOpen");
+        }
+
+        function fbBase64ToBytesArray(base64) {
+            var binary_string = window.atob(base64);
+            var len = binary_string.length;
+            var bytes = new Uint8Array(len);
+            for (var i = 0; i < len; i++) {
+                bytes[i] = binary_string.charCodeAt(i);
+            }
+            return bytes.buffer;
+        }
+
+        function setLocalizationFB(parameter){
+            switch(parameter.key){
+                case "HEADER_TITLE":
+                    document.getElementById("fb_popup_header_title").innerHTML = parameter.value;
+                    break;
+                case "DESCRIPTION_TEXT":
+                    document.getElementById("fb_popup_description_title").innerHTML = parameter.value;
+                    break;
+                case "SELECT_BUTTON_CONTENT":
+                    document.getElementById("fb_popup_select_button_title").innerHTML = parameter.value;
+                    break;
+                case "CLOSE_BUTTON_CONTENT":
+                    document.getElementById("fb_popup_close_button_title").innerHTML = parameter.value;
+                    break;
+            }
+        }
+
+    </script>
+<!-- END WEBGL FILE BROWSER LIB -->
+</body>
+</html>
