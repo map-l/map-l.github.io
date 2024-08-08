@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Tomb of the Mask</title>
+  <link rel="stylesheet" href="TemplateData/style.css">
+  <!--<script async
+          data-ad-client="ca-pub-2426838779592611"
+          data-ad-frequency-hint="30s"
+          data-ad-channel="9765817600"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+  </script>-->
+</head>
+
+<body style="text-align: center; margin: 0; overflow: hidden;">
+<div id="unity-container" style="visibility: hidden; position: absolute; width: 100%; height: 100%">
+  <canvas id="unity-canvas" style="width: 100%; height: 100%"></canvas>
+</div>
+<div id="loader" class="wrapper">
+  <svg width="200" height="22" viewBox="0 0 200 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="_1Hgym">
+    <path d="M22.4961 1.05078V16.6253H28.7461V21.0307H17.4961V1.05078H22.4961Z" fill="red"></path>
+    <path
+            d="M42.2296 13.5549L39.9961 6.85338L37.7626 13.5549H42.2296ZM43.5494 17.5331H36.4428L35.3007 21.0307H29.9961L37.2804 1.05078H42.7118L49.9961 21.0307H44.6915L43.5494 17.5331Z"
+            fill="red"></path>
+    <path
+            d="M155.98 13.5549L153.746 6.85338L151.513 13.5549H155.98ZM157.299 17.5331H150.193L149.051 21.0307H143.746L151.03 1.05078H156.462L163.746 21.0307H158.442L157.299 17.5331Z"
+            fill="red"></path>
+    <path
+            d="M99.9961 5.33152H93.7461V8.69562H99.6552V13.1277H93.7461V16.5986H99.9961V21.0307H88.7461V1.05078H99.9961V5.33152Z"
+            fill="red"></path>
+    <path
+            d="M55.0237 11.3886L48.1211 1.05078H53.9946L57.5086 6.41142L60.9976 1.05078H66.8711L59.9434 11.3886V21.0752H55.0237V11.3886Z"
+            fill="red"></path>
+    <path
+            d="M187.524 11.3655L180.621 1.05078H186.495L190.009 6.39949L193.498 1.05078H199.371L192.443 11.3655V21.0307H187.524V11.3655Z"
+            fill="red"></path>
+    <path
+            d="M103.746 21.0307V1.05078H108.746L117.496 13.2078V1.05078H122.496V21.0307H117.496L108.746 8.72232V21.0307H103.746Z"
+            fill="red"></path>
+    <path
+            d="M131.246 16.5986H132.271C133.121 16.5986 133.88 16.4562 134.546 16.1714C135.214 15.8867 135.771 15.495 136.221 14.9966C136.689 14.4983 137.039 13.9109 137.271 13.2345C137.521 12.5403 137.646 11.7838 137.646 10.9651C137.646 10.1641 137.521 9.4165 137.271 8.72232C137.021 8.02814 136.664 7.43186 136.196 6.93347C135.746 6.43509 135.189 6.04349 134.521 5.75871C133.855 5.47392 133.105 5.33152 132.271 5.33152H131.246V16.5986ZM126.246 1.05078H133.496C134.78 1.05078 135.98 1.17534 137.096 1.72712C138.23 2.2789 139.214 3.01759 140.046 3.94316C140.896 4.85093 141.564 5.9189 142.046 7.14707C142.53 8.35744 142.771 9.6301 142.771 10.9651C142.771 12.2822 142.53 13.5549 142.046 14.7831C141.58 15.9935 140.921 17.0614 140.071 17.987C139.239 18.9125 138.255 19.6513 137.121 20.203C136.005 20.7547 134.796 21.0307 133.496 21.0307H126.246V1.05078Z"
+            fill="red"></path>
+    <path
+            d="M171.249 9.89709H172.067C173.033 9.89709 173.775 9.6835 174.292 9.25631C174.808 8.82912 175.067 8.21504 175.067 7.41406C175.067 6.61308 174.808 5.999 174.292 5.57181C173.775 5.14462 173.033 4.93103 172.067 4.93103H171.249V9.89709ZM181.917 21.0307H175.817L171.249 13.2879V21.0307H166.242V1.05078H173.867C174.917 1.05078 175.833 1.06854 176.617 1.40673C177.4 1.72712 178.042 2.1721 178.542 2.74169C179.058 3.31128 179.442 3.96986 179.692 4.71744C179.958 5.46502 180.092 6.26599 180.092 7.12037C180.092 8.65113 179.742 9.89709 179.042 10.8583C178.358 11.8016 177.342 12.4424 175.992 12.7806L181.917 21.0307Z"
+            fill="red"></path>
+    <path
+            d="M76.2711 9.74664H85.9961C85.9961 10.817 85.9544 11.7892 85.8711 12.6633C85.7877 13.5374 85.6211 14.3491 85.3711 15.0984C85.0211 16.151 84.5461 17.0875 83.9461 17.9081C83.3461 18.7108 82.6377 19.3888 81.8211 19.9417C81.0211 20.4769 80.1377 20.8873 79.1711 21.1726C78.2044 21.458 77.1877 21.6008 76.1211 21.6008C74.6543 21.6008 73.3127 21.3422 72.0961 20.8248C70.8961 20.3074 69.8627 19.5849 68.9961 18.6573C68.1293 17.7118 67.4543 16.5879 66.9711 15.2857C66.4877 13.9656 66.2461 12.5117 66.2461 10.924C66.2461 9.35418 66.4793 7.91811 66.9461 6.61586C67.4293 5.29575 68.1043 4.17188 68.9711 3.24425C69.8543 2.31662 70.9127 1.59413 72.1461 1.07679C73.3793 0.559451 74.7543 0.300781 76.2711 0.300781C78.2377 0.300781 79.9627 0.755681 81.4461 1.66548C82.9293 2.57528 84.1044 3.98457 84.9711 5.89337L80.3211 7.9538C79.8877 6.84776 79.3211 6.05392 78.6211 5.57226C77.9377 5.09061 77.1544 4.84978 76.2711 4.84978C75.5377 4.84978 74.8711 5.00141 74.2711 5.30468C73.6711 5.5901 73.1543 6.00933 72.7211 6.56234C72.3043 7.09752 71.9711 7.74865 71.7211 8.51573C71.4877 9.28281 71.3711 10.1391 71.3711 11.0846C71.3711 11.9409 71.4711 12.7347 71.6711 13.4661C71.8877 14.1976 72.2043 14.8308 72.6211 15.366C73.0377 15.9012 73.5543 16.3203 74.1711 16.6236C74.7877 16.909 75.5043 17.0518 76.3211 17.0518C76.8043 17.0518 77.2711 16.9983 77.7211 16.8912C78.1711 16.7664 78.5711 16.5791 78.9211 16.3293C79.2877 16.0617 79.5877 15.7228 79.8211 15.3125C80.0544 14.9021 80.2127 14.4027 80.2961 13.814H76.2711V9.74664Z"
+            fill="red"></path>
+    <path
+            d="M4.9968 10.1374H6.525C8.325 10.1374 9.225 9.3008 9.225 7.62765C9.225 5.95451 8.325 5.11793 6.525 5.11793H4.9968V10.1374ZM4.9968 21.0307H0V1.05078H7.8C9.91667 1.05078 11.5333 1.48683 12.65 2.66159C13.7834 3.83636 14.35 5.49171 14.35 7.62765C14.35 9.76359 13.7834 11.4189 12.65 12.5937C11.5333 13.7685 9.91667 14.3559 7.8 14.3559H4.9968V21.0307Z"
+            fill="red"></path>
+  </svg>
+  <span class="loader"></span>
+</div>
+<script>
+  var gameInstance = null;
+  var gameShouldStart = false;
+  var adsAvailable = false;
+
+  loadGame();
+
+  window.adsbygoogle = window.adsbygoogle || [];
+  var adBreak = adConfig = function(o) {adsbygoogle.push(o);}
+
+  let adConfigPromise = new Promise((resolve, reject) => adConfig({
+    preloadAdBreaks: "on",
+    onReady: () => resolve(true)
+  }));
+  let timeoutPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(false);
+    }, 2000);
+  });
+
+  Promise.race([
+    adConfigPromise,
+    timeoutPromise
+  ]).then((shouldShowPreRoll) => {
+    if (shouldShowPreRoll) {
+      showPreRoll();
+    } else {
+      startGame();
+    }
+  });
+
+  function showPreRoll(){
+    adsAvailable = true;
+    adBreak({
+      type: "preroll",
+      adBreakDone: (placementInfo) => startGame()
+    });
+  }
+
+  function startGame(){
+    gameShouldStart = true;
+  }
+
+  function loadGame(){
+    var container = document.querySelector("#unity-container");
+    var canvas = document.querySelector("#unity-canvas");
+
+    var buildUrl = "Build";
+    var loaderUrl = buildUrl + "/Mobile.loader.js";
+    var config = {
+      companyName: "Playgendary",
+      productName: "Tomb of the Mask",
+      productVersion: "1.0",
+    }
+
+
+    var shouldCalculateWidth = false;
+
+    if(shouldCalculateWidth){
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+      var aspectRatio = 1;
+      var isVertical = aspectRatio < 1;
+      var condition = () => isVertical ? container.offsetHeight <= container.offsetWidth : container.offsetHeight > container.offsetWidth;
+      var checkPause = (state) => {
+        if(window.pgio){
+          window.pgio.gamePause(state);
+        } else {
+          window.pgio = {};
+          window.pgio.pauseRequested = state > 0;
+        }
+      };
+
+      function calculateWidth() {
+        if(condition()){
+          if(!isVertical){
+            checkPause(1);
+          } else {
+            if(isMobile){
+              checkPause(1)
+            }
+          }
+          var unityContainerWidth = container.offsetWidth;
+          var targetWidth = container.offsetHeight * aspectRatio;
+          canvas.style.width = (targetWidth / unityContainerWidth * 100) + "%";
+          canvas.style.height = "100%";
+        } else {
+          if(!isVertical){
+            checkPause(0);
+          } else {
+            if(isMobile){
+              checkPause(0)
+            }
+          }
+          canvas.style.width = "100%";
+          canvas.style.height = "100%";
+        }
+      }
+
+      calculateWidth();
+      window.addEventListener('resize', calculateWidth);
+    }
+
+    var buildType = "Dual";
+    if(buildType === "Dual"){
+      if /* (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) */ (false) {
+        // By default Unity keeps WebGL canvas render target size matched with
+        // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+        // Set this to false if you want to decouple this synchronization from
+        // happening inside the engine, and you would instead like to size up
+        // the canvas DOM size and WebGL render target sizes yourself.
+        // config.matchWebGLToCanvasSize = false;
+        config.devicePixelRatio = 1;
+
+        buildUrl = "Mobile/Build";
+        config.dataUrl = buildUrl + "/Mobile.data.unityweb";
+        config.frameworkUrl = buildUrl + "/Mobile.framework.js.unityweb";
+        config.codeUrl = buildUrl + "/Mobile.wasm.unityweb";
+        config.streamingAssetsUrl = "Mobile/StreamingAssets";
+
+        loaderUrl = buildUrl + "/Mobile.loader.js";
+        console.log("selected mobile build")
+      } else {
+        buildUrl = "Desktop/Build";
+        config.dataUrl = buildUrl + "/Desktop.data.unityweb";
+        config.frameworkUrl = buildUrl + "/Desktop.framework.js.unityweb";
+        config.codeUrl = buildUrl + "/Desktop.wasm.unityweb";
+        config.streamingAssetsUrl = "Desktop/StreamingAssets";
+
+        loaderUrl = buildUrl + "/Desktop.loader.js";
+        console.log("selected desktop build")
+      }
+    } else {
+      config.dataUrl = buildUrl + "/Mobile.data.unityweb";
+      config.frameworkUrl = buildUrl + "/Mobile.framework.js.unityweb";
+      config.codeUrl = buildUrl + "/Mobile.wasm.unityweb";
+      config.streamingAssetsUrl = "StreamingAssets";
+      console.log("single build")
+    }
+
+    var loader = document.getElementById("loader");
+    var script = document.createElement("script");
+    script.src = loaderUrl;
+    script.onload = () => {
+      createUnityInstance(canvas, config).then((unityInstance) => {
+        gameInstance = unityInstance;
+      }).catch((message) => {
+        alert(message);
+      });
+    };
+    document.body.appendChild(script);
+  }
+</script>
+</body>
+
+</html>
