@@ -1,100 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
-		/>
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<meta name="theme-color" content="#000000" />
-		<link rel="manifest" href="./manifest.json" />
-		<meta name="mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="application-name" content="Fruit Ninja" />
-		<meta name="apple-mobile-web-app-title" content="Fruit Ninja" />
-		<meta name="msapplication-starturl" content="./" />
-		<script type="text/javascript" src="poki-sdk.js"></script>
+<html>
+  <head>
+    <meta charset="utf-8">
 
-		<title>Fruit Ninja</title>
-		<style>
-			@font-face {
-				font-family: gangofchinese;
-				src: url('assets/font/gangofchinese.ttf');
-			}
+    <title>Fruit Ninja</title>
 
-			body {
-				background-color: #000000;
-				margin: 0;
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,minimal-ui=true,viewport-fit=cover"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes"/>
 
-				height: 100%;
-				max-height: 100vh !important;
-				overflow: hidden;
-				position: relative;
-			}
+    <meta name="screen-orientation" content="landscape"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
 
-			.fontLoader {
-				position: absolute;
-				left: -1000px;
-				visibility: hidden;
-			}
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
-			#phaser-canvas {
-				margin: 0 auto;
-			}
+    <!-- libraries. -->
+    <script src="azerion-libs.js" charset="utf-8"> </script>
+    <script src="AzerionAdHandler.js" charset="utf-8"> </script>
 
-			/*#enable3d-three-canvas{
-          position: sticky !important;
-      }*/
-			/*#enable3d-phaser-canvas{
-          margin: 0 auto;
-          position: absolute !important;
-      }*/
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="loader.css"/>
+    <style>
+      #screen-orientation {
+        margin: 0 auto;
+        height: 100vh;
+        width: 100vw;
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color:#000000;
+        background-image: url(./images/rotate-device.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgb(0, 0, 0);
+        background-size: 50%;
+        z-index: 999;
+      }
+    </style>
+    <script src="orientation.js?v=11231" defer></script>
+  </head>
+  <body>
+    <div id="GameDiv">
+      <div id="Cocos3dGameContainer">
+        <canvas id="GameCanvas"></canvas>
+      </div>
+    </div>
+    <div id="loader">Loading ...</div>
+    <div id="azerion-resize-check-game" style="position: absolute; top:5vh; right:5vw; z-index: 999;background-color: transparent;
+font-size: 0px;height: 1px; width: 1px;color: white;">Placeholder</div>
 
-			body,
-			#content {
-				height: 100vh !important;
-				max-height: 100vh !important;
-			}
+    <div id="azerion-resize-check-engine" style="position: absolute; top:5vh; left:5vw; z-index: 999;background-color: transparent;
+font-size: 0px;height: 1px; width: 1px;color: white;">Placeholder 2</div>
 
-			#divAds,
-			#tempads {
-				display: none;
-				/*background-color: green;*/
-			}
+<!-- Polyfills bundle. -->
+<script src="src/polyfills.bundle.js" charset="utf-8"> </script>
 
-			canvas {
-				width: 100%;
-				height: 100%;
-				display: grid !important;
-				grid-area: 1/1;
-				/*position: sticky !important;*/
-				/*margin: 0 auto !important;*/
-				margin-top: 0 !important;
-				margin-bottom: 0 !important;
-				/*margin-left: auto !important;
-          margin-right: auto !important;*/
-				padding: 0 !important;
-				max-width: 100% !important;
-				max-height: 100vh !important;
-			}
-		</style>
+<!-- SystemJS support. -->
+<script src="src/system.bundle.js" charset="utf-8"> </script>
 
-		<noscript>Please enable javascript to continue using this application.</noscript>
-	</head>
-	<body>
-		<div class="fontLoader" style="font-family: gangofchinese">-</div>
-		<div id="content">
-			<div id="phaser-canvas"></div>
-		</div>
+<!-- Import map -->
+<script src="src/import-map.json" type="systemjs-importmap" charset="utf-8"> </script>
 
-		<script type="text/javascript" src="vendors.bundle.js"></script>
-		<script type="text/javascript" src="main.bundle.js"></script>
-		<style id="injectStyles">
-			html,
-			body {
-				background: none !important;
-			}
-		</style>
-	</body>
+<script>
+    System.import('./index.js').catch(function(err) { console.error(err); })
+</script>
+
+    <div id="screen-orientation"></div>
+
+  </body>
 </html>
