@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Bowmasters</title>
+  <link rel="stylesheet" href="TemplateData/style.css">
+  <script async
+          data-ad-client="ca-pub-123456789"
+          data-ad-frequency-hint="0s"
+          data-adbreak-test="on"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+  </script>
+</head>
+
+<body style="text-align: center; margin: 0">
+  <div id="unity-container" style="position: absolute; width: 100%; height: 100%">
+    <div id="loader" class="wrapper">
+      <span class="loader"></span>
+    </div>
+    <canvas id="unity-canvas" style="width: 100%; height: 100%"></canvas>
+  </div>
+  <script>
+    var gameInstance = null;
+    var gameShouldStart = false;
+    
+    loadGame();
+    
+    window.adsbygoogle = window.adsbygoogle || [];
+    var adBreak = adConfig = function(o) {adsbygoogle.push(o);}
+    
+    let adConfigPromise = new Promise((resolve, reject) => adConfig({
+      preloadAdBreaks: "on",
+      onReady: () => resolve(true)
+    }));
+    let timeoutPromise = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(false);
+      }, 0);
+    });
+
+    Promise.race([
+      adConfigPromise,
+      timeoutPromise
+    ]).then((shouldShowPreRoll) => {
+      if (shouldShowPreRoll) {
+        showPreRoll();
+      } else {
+        startGame();
+      }
+    });
+    
+    function showPreRoll(){
+      adBreak({
+        type: "preroll",
+        adBreakDone: (placementInfo) => startGame()
+      });
+    }
+    
+    function startGame(){
+      gameShouldStart = true;
+    }
+    
+    function loadGame(){
+      var container = document.querySelector("#unity-container");
+      var canvas = document.querySelector("#unity-canvas");
+      
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/html-ads.loader.js";
+      var config = {
+        companyName: "Playgendary Ltd",
+        productName: "Bowmasters",
+        productVersion: "4.5.0",
+      }
+
+      var buildType = "**BUILD_TYPE**";
+      if(buildType === "Dual"){
+        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+          // By default Unity keeps WebGL canvas render target size matched with
+          // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+          // Set this to false if you want to decouple this synchronization from
+          // happening inside the engine, and you would instead like to size up
+          // the canvas DOM size and WebGL render target sizes yourself.
+          // config.matchWebGLToCanvasSize = false;
+          config.devicePixelRatio = 1;
+
+          buildUrl = "Mobile/Build";
+          config.dataUrl = buildUrl + "/**MOBILE_DATA_FILE_NAME**";
+          config.frameworkUrl = buildUrl + "/**MOBILE_FRAMEWORK_FILE_NAME**";
+          config.codeUrl = buildUrl + "/**MOBILE_CODE_FILE_NAME**";
+          config.streamingAssetsUrl = buildUrl + "/StreamingAssets";
+
+          loaderUrl = buildUrl + "/Mobile.loader.js";
+          console.log("selected mobile build")
+        } else {
+          buildUrl = "Desktop/Build";
+          config.dataUrl = buildUrl + "/**DESKTOP_DATA_FILE_NAME**";
+          config.frameworkUrl = buildUrl + "/**DESKTOP_FRAMEWORK_FILE_NAME**";
+          config.codeUrl = buildUrl + "/**DESKTOP_CODE_FILE_NAME**";
+          config.streamingAssetsUrl = buildUrl + "/StreamingAssets";
+
+          loaderUrl = buildUrl + "/Desktop.loader.js";
+          console.log("selected desktop build")
+        }
+      } else {
+        config.dataUrl = buildUrl + "/0b3710365b00a11ca429e43897df98bd.data.br";
+        config.frameworkUrl = buildUrl + "/e5428b3349428c5b8e775a4638330343.js.br";
+        config.codeUrl = buildUrl + "/c871379ade4b6996fbd449f701f45377.wasm.br";
+        config.streamingAssetsUrl = "StreamingAssets";
+        console.log("single build")
+      }
+
+      var loader = document.getElementById("loader");
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config).then((unityInstance) => {
+          gameInstance = unityInstance;
+        }).catch((message) => {
+          alert(message);
+        });
+      };
+      document.body.appendChild(script);
+    }
+  </script>
+</body>
+
+</html>
