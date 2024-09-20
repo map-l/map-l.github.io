@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="soundSystem.png">
 	<SubTexture name="sound system0000" x="0" y="1393" width="753" height="260" frameX="-63" frameY="-181" frameWidth="875" frameHeight="963" />
 	<SubTexture name="sound system0001" x="0" y="1393" width="753" height="260" frameX="-63" frameY="-181" frameWidth="875" frameHeight="963" />

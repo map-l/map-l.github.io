@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="henchmen.png">
 	<SubTexture name="hench arm spin 10000" x="4" y="4" width="92" height="141" frameX="-24" frameY="0" frameWidth="140" frameHeight="141" />
 	<SubTexture name="hench arm spin 10001" x="4" y="4" width="92" height="141" frameX="-24" frameY="0" frameWidth="140" frameHeight="141" />

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="bfChristmas.png">
 	<SubTexture name="BF HEY!!0000" x="0" y="0" width="395" height="419" frameX="0" frameY="0" frameWidth="415" frameHeight="421" />
 	<SubTexture name="BF HEY!!0001" x="0" y="0" width="395" height="419" frameX="0" frameY="0" frameWidth="415" frameHeight="421" />

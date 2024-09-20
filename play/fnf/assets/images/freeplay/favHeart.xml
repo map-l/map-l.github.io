@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="favHeart.png">
 	<SubTexture name="favorite heart0000" x="53" y="0" width="21" height="16" frameX="-14" frameY="-11" frameWidth="48" frameHeight="39" />
 	<SubTexture name="favorite heart0001" x="0" y="0" width="48" height="39" />

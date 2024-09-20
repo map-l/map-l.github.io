@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="arrows.png">
 	<SubTexture name="leftIdle0000" x="4" y="4" width="48" height="85" />
 	<SubTexture name="rightIdle0000" x="56" y="4" width="47" height="85" />

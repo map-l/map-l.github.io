@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="Text_Boxes.png">
 	<SubTexture name="SENPAI ANGRY IMPACT SPEECH0000" x="4" y="4" width="248" height="144" />
 	<SubTexture name="SENPAI ANGRY IMPACT SPEECH0001" x="256" y="4" width="248" height="144" />

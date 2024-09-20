@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="tankmanKilled1.png">
 	<SubTexture name="John Shot 10000" x="0" y="2148" width="750" height="512" frameX="0" frameY="-67" frameWidth="1044" frameHeight="622" />
 	<SubTexture name="John Shot 10001" x="2708" y="2101" width="807" height="615" frameX="-105" frameY="0" frameWidth="1044" frameHeight="622" />

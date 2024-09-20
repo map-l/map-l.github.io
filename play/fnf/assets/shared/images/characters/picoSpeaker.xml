@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="picoSpeaker.png">
 	<SubTexture name="Pico shoot 10000" x="6865" y="667" width="899" height="711" frameX="-2" frameY="-80" frameWidth="1178" frameHeight="791" />
 	<SubTexture name="Pico shoot 10001" x="2326" y="667" width="901" height="711" frameX="0" frameY="-80" frameWidth="1178" frameHeight="791" />

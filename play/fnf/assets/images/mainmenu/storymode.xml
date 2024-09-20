@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="storymode.png">
 	<SubTexture name="storymode idle0000" x="0" y="540" width="615" height="122" />
 	<SubTexture name="storymode idle0001" x="0" y="540" width="615" height="122" />

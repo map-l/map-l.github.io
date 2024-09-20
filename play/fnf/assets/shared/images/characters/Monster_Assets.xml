@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="Monster_Assets.png">
 	<SubTexture name="monster down0000" x="3367" y="701" width="428" height="571" frameX="-12" frameY="-18" frameWidth="440" frameHeight="589" />
 	<SubTexture name="monster down0001" x="3367" y="701" width="428" height="571" frameX="-12" frameY="-18" frameWidth="440" frameHeight="589" />

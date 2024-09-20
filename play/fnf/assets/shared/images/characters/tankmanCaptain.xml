@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="tankmanCaptain.png">
 	<SubTexture name="PRETTY GOOD tankman instance 10000" x="487" y="1180" width="432" height="563" frameX="-99" frameY="-26" frameWidth="533" frameHeight="589" />
 	<SubTexture name="PRETTY GOOD tankman instance 10001" x="0" y="1186" width="432" height="563" frameX="-99" frameY="-26" frameWidth="533" frameHeight="589" />

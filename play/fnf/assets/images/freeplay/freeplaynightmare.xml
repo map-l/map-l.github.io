@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="freeplaynightmare.png">
 	<SubTexture name="idle0000" x="4" y="4" width="207" height="69" frameX="-2" frameY="-2" frameWidth="211" frameHeight="74" />
 	<SubTexture name="idle0001" x="215" y="4" width="208" height="72" frameX="-3" frameY="-2" frameWidth="211" frameHeight="74" />

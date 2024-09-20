@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="BOYFRIEND.png">
 	<SubTexture name="BF Dead confirm0000" x="2694" y="0" width="439" height="435" frameX="0" frameY="-64" frameWidth="439" frameHeight="499" />
 	<SubTexture name="BF Dead confirm0001" x="3143" y="0" width="439" height="469" frameX="0" frameY="-30" frameWidth="439" frameHeight="499" />

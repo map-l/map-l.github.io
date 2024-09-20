@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="GF_ass_sets.png">
 	<SubTexture name="GF Dancing Beat Hair blowing CAR0000" x="1418" y="3213" width="699" height="634" frameX="-2" frameY="-15" frameWidth="774" frameHeight="649" />
 	<SubTexture name="GF Dancing Beat Hair blowing CAR0001" x="0" y="3222" width="703" height="634" frameX="0" frameY="-15" frameWidth="774" frameHeight="649" />

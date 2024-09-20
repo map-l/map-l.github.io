@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="checkboxThingie.png">
 	<SubTexture name="Check Box Selected Static0000" x="0" y="198" width="120" height="174" frameX="0" frameY="0" frameWidth="140" frameHeight="225" />
 	<SubTexture name="Check Box Selected Static0001" x="0" y="198" width="120" height="174" frameX="0" frameY="0" frameWidth="140" frameHeight="225" />

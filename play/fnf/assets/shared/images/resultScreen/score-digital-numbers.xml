@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="score-digital-numbers.png">
 	<SubTexture name="ONE DIGITAL0001" x="4" y="4" width="79" height="123" frameX="-15" frameY="-1" frameWidth="95" frameHeight="125"/>
 	<SubTexture name="ONE DIGITAL0002" x="4" y="4" width="79" height="123" frameX="-15" frameY="-1" frameWidth="95" frameHeight="125"/>

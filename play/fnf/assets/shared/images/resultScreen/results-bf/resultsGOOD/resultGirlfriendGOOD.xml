@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="resultGirlfriendGOOD.png">
 	<SubTexture name="Girlfriend Good Anim0000" x="4" y="4" width="222" height="226" frameX="-42" frameY="-128" frameWidth="264" frameHeight="354"/>
 	<SubTexture name="Girlfriend Good Anim0001" x="230" y="4" width="210" height="290" frameX="-18" frameY="-45" frameWidth="264" frameHeight="354"/>

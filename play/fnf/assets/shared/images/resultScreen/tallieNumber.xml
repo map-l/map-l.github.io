@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="tallieNumber.png">
 	<SubTexture name="0 small0000" x="78" y="141" width="34" height="37" />
 	<SubTexture name="1 small0000" x="79" y="0" width="32" height="42" />

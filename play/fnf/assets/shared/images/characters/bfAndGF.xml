@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="bfAndGF.png">
 	<SubTexture name="BF catches GF0000" x="604" y="0" width="579" height="507" frameX="-40" frameY="-96" frameWidth="634" frameHeight="603" />
 	<SubTexture name="BF catches GF0001" x="0" y="0" width="594" height="504" frameX="-40" frameY="-99" frameWidth="634" frameHeight="603" />

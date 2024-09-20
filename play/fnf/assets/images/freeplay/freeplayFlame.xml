@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="freeplayFlame.png">
 	<SubTexture name="fire loop full instance 10000" x="0" y="0" width="109" height="129" frameX="0" frameY="-70" frameWidth="109" frameHeight="199" />
 	<SubTexture name="fire loop full instance 10001" x="115" y="0" width="38" height="173" frameX="-42" frameY="0" frameWidth="109" frameHeight="199" />

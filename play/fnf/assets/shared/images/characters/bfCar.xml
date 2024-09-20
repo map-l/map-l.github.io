@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="bfCar.png">
 	<SubTexture name="BF idle dance0000" x="1123" y="1312" width="406" height="392" frameX="-1" frameY="-20" frameWidth="411" frameHeight="412" />
 	<SubTexture name="BF idle dance0001" x="1539" y="1312" width="406" height="392" frameX="-1" frameY="-20" frameWidth="411" frameHeight="412" />
