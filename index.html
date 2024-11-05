@@ -83,7 +83,31 @@ img {
         <img src="/assets/images/cursed_trollge_by_flowey2009_df8cbs0-fullview.png" style="width: 80px; height: 80px; display: inline;">
       </div>
 
-      <audio controls src="/assets/music/youtube_5yXdpVCmTGc_audio.mp3"></audio>
+    
+      <audio id="audio" controls src="/assets/music/youtube_5yXdpVCmTGc_audio.mp3" autoplay loop></audio>
+
+      <script>
+          var audioElement = document.querySelector('audio');
+          var audioContext = new (window.AudioContext || window.webkitAudioContext)();
+          var gainNode = audioContext.createGain();
+          var audioSource = audioContext.createMediaElementSource(audioElement);
+      
+          audioSource.connect(gainNode);
+          gainNode.connect(audioContext.destination);
+      
+          // Increase volume beyond max (default max is 1.0)
+          gainNode.gain.setValueAtTime(5, audioContext.currentTime); // This increases the volume by a factor of 5
+      
+          // Play the audio
+          audioElement.play();
+          
+          setInterval(function() {
+              audioElement.play(); // Reinforce playback every second
+          }, 1000);
+      </script>
+      
+    
+
       <h1>still mangoes 💀💀💀</h1>
       
       
