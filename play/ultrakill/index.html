@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | ULTRAKILL</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes">
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: #231F20;
+        width: 100%;
+        height: 100%;
+      }
+      #unity-canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        background: #231F20;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="unity-canvas" tabindex="-1"></canvas>
+    <script src="Build/9853637125e801e9aae48e78dbbdcfca.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/2facc552a7176a3c4f6184e293ead869.data.unityweb",
+        frameworkUrl: "Build/372c51523da4553ad9ad6740d46ef615.framework.js.unityweb",
+        codeUrl: "Build/4316a55f7504875581587d5c75896d34.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Hakita",
+        productName: "ULTRAKILL",
+        productVersion: "1.0"
+      });
+    </script>
+  </body>
+</html>
